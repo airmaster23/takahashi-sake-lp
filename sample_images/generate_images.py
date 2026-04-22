@@ -19,10 +19,13 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         for html_file, png_file in slides:
-            page = await browser.new_page(viewport={"width": 700, "height": 700})
+            page = await browser.new_page(
+                viewport={"width": 700, "height": 700},
+                device_scale_factor=2
+            )
             url = (BASE / html_file).as_uri()
             await page.goto(url, wait_until="networkidle")
-            await page.wait_for_timeout(2000)
+            await page.wait_for_timeout(3000)
             await page.screenshot(path=str(BASE / png_file), type="png")
             await page.close()
             print(f"Created: {png_file}")
