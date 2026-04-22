@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 700px; height: 700px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #FAFAF7;
+    color: #1a1a1a;
+    overflow: hidden;
+    position: relative;
+  }
+  .header {
+    background: #1a1a1a;
+    padding: 18px 0;
+    text-align: center;
+  }
+  .header-label {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #C9A84C;
+  }
+  .header-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 4px;
+    letter-spacing: 3px;
+  }
+  .body-content {
+    padding: 25px 30px;
+  }
+  .lineup-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+  .lineup-card {
+    background: #fff;
+    border: 1px solid #e0ddd5;
+    text-align: center;
+    padding: 18px 12px 20px;
+    transition: all 0.3s;
+  }
+  .lineup-card.featured {
+    border: 2px solid #C9A84C;
+    position: relative;
+  }
+  .lineup-card.featured::before {
+    content: 'POPULAR';
+    position: absolute;
+    top: -1px; left: 50%;
+    transform: translateX(-50%);
+    background: #C9A84C;
+    color: #1a1a1a;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 3px 14px;
+  }
+  .lineup-img {
+    width: 140px;
+    height: 170px;
+    object-fit: contain;
+    margin: 10px auto 12px;
+    display: block;
+  }
+  .lineup-name {
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  .lineup-sub {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .lineup-price {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #8B6914;
+  }
+  .lineup-price small {
+    font-size: 11px;
+    color: #999;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+  }
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: #1a1a1a;
+    padding: 20px 30px;
+    text-align: center;
+  }
+  .bottom-bar p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  .bottom-bar .gold { color: #E8D48B; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="header-label">VARIATION</p>
+    <p class="header-title">3つのラインナップ</p>
+  </div>
+  <div class="body-content">
+    <div class="lineup-grid">
+      <div class="lineup-card featured">
+        <img class="lineup-img" src="https://tshop.r10s.jp/taka-sake/cabinet/wine2/01556973/wine02/imgrc0139069202.jpg" alt="">
+        <p class="lineup-name">STARDUST<br>プロセッコ</p>
+        <p class="lineup-sub">定番のゴールド<br>華やかな泡立ち</p>
+        <p class="lineup-price">&yen;12,210<br><small>（税込）</small></p>
+      </div>
+      <div class="lineup-card">
+        <img class="lineup-img" src="https://tshop.r10s.jp/taka-sake/cabinet/wine2/01556973/wine02/imgrc0139068920.jpg" alt="">
+        <p class="lineup-name">STARDUST<br>ロゼ</p>
+        <p class="lineup-sub">エレガントなピンク<br>フルーティーな味わい</p>
+        <p class="lineup-price">&yen;14,300<br><small>（税込）</small></p>
+      </div>
+      <div class="lineup-card">
+        <img class="lineup-img" src="https://tshop.r10s.jp/taka-sake/cabinet/wine2/01556973/wine02/imgrc0139121464.jpg" alt="">
+        <p class="lineup-name">STARDUST<br>ブラック</p>
+        <p class="lineup-sub">シックな漆黒<br>特別感を演出</p>
+        <p class="lineup-price">&yen;19,800<br><small>（税込）</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <p>シーンに合わせて<span class="gold">選べる3色</span>。</p>
+  </div>
+</body>
+</html>

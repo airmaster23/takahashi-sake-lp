@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 700px; height: 700px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #FAFAF7;
+    color: #1a1a1a;
+    overflow: hidden;
+    position: relative;
+  }
+  .header {
+    background: #1a1a1a;
+    padding: 18px 0;
+    text-align: center;
+  }
+  .header-label {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #C9A84C;
+  }
+  .header-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 4px;
+    letter-spacing: 3px;
+  }
+  .body-content {
+    padding: 30px 40px;
+  }
+  .scene-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .scene-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    border: 1px solid #e8e5dc;
+    padding: 20px 24px;
+    border-left: 4px solid #C9A84C;
+  }
+  .scene-num {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #C9A84C;
+    min-width: 45px;
+  }
+  .scene-text h3 {
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+  .scene-text p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.7;
+  }
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: #1a1a1a;
+    padding: 22px 30px;
+    text-align: center;
+  }
+  .bottom-bar p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  .bottom-bar .gold { color: #E8D48B; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="header-label">BENEFIT</p>
+    <p class="header-title">こんなシーンにぴったり</p>
+  </div>
+  <div class="body-content">
+    <div class="scene-grid">
+      <div class="scene-item">
+        <span class="scene-num">01</span>
+        <div class="scene-text">
+          <h3>誕生日・記念日のサプライズに</h3>
+          <p>キラキラ輝くボトルを開けた瞬間、忘れられない思い出に。<br>大切な人の特別な日を最高に演出します。</p>
+        </div>
+      </div>
+      <div class="scene-item">
+        <span class="scene-num">02</span>
+        <div class="scene-text">
+          <h3>パーティー・女子会の主役に</h3>
+          <p>テーブルに置くだけで一気に華やかに。<br>SNS映え間違いなし、全員が写真を撮りたくなるボトルです。</p>
+        </div>
+      </div>
+      <div class="scene-item">
+        <span class="scene-num">03</span>
+        <div class="scene-text">
+          <h3>お世話になった方への贈り物に</h3>
+          <p>見た目のインパクトと確かな味わいの両立。<br>「センスいいね」と言われるギフトの新定番です。</p>
+        </div>
+      </div>
+      <div class="scene-item">
+        <span class="scene-num">04</span>
+        <div class="scene-text">
+          <h3>自分へのご褒美に</h3>
+          <p>頑張った自分に、ちょっと贅沢な一杯。<br>お部屋に飾っても美しいインテリアボトルとしても。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <p><span class="gold">「選んで良かった」</span>と思える一本です。</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 700px; height: 700px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #FAFAF7;
+    color: #1a1a1a;
+    overflow: hidden;
+    position: relative;
+  }
+  .header {
+    background: #1a1a1a;
+    padding: 18px 0;
+    text-align: center;
+  }
+  .header-label {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #C9A84C;
+  }
+  .header-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 4px;
+    letter-spacing: 3px;
+  }
+  .body-content {
+    padding: 30px 40px;
+  }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 25px;
+  }
+  .feature-item {
+    background: #fff;
+    border: 1px solid #e0ddd5;
+    padding: 22px 18px;
+    text-align: center;
+    border-radius: 2px;
+  }
+  .feature-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .feature-title {
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 6px;
+    color: #1a1a1a;
+    letter-spacing: 1px;
+  }
+  .feature-value {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.7;
+  }
+  .feature-value strong {
+    color: #8B6914;
+    font-size: 18px;
+  }
+  .bottom-note {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 18px 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+  }
+  .bottom-note p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+  }
+  .bottom-note .gold { color: #E8D48B; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="header-label">FEATURE</p>
+    <p class="header-title">商品の特徴</p>
+  </div>
+  <div class="body-content">
+    <div class="feature-grid">
+      <div class="feature-item">
+        <span class="feature-icon">&#128142;</span>
+        <p class="feature-title">クリスタル装飾</p>
+        <p class="feature-value">ボトル表面に<br><strong>約3,000粒</strong>の<br>クリスタルを手作業で装飾</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">&#127815;</span>
+        <p class="feature-title">ぶどう品種</p>
+        <p class="feature-value">イタリア・ヴェネト州産<br><strong>Glera</strong>（グレーラ）<br>100%使用</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">&#127942;</span>
+        <p class="feature-title">格付け</p>
+        <p class="feature-value">イタリアワイン最高格付<br><strong>DOCG</strong><br>プロセッコ認定</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">&#127870;</span>
+        <p class="feature-title">アルコール度数</p>
+        <p class="feature-value">飲みやすい<br><strong>12%</strong><br>750ml フルボトル</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-note">
+    <p>見た目だけじゃない。<span class="gold">味わいも本格派</span>のスパークリング。</p>
+  </div>
+</body>
+</html>

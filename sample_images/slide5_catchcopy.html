@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 700px; height: 700px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a3a6a, #1a2744);
+    padding: 16px 0;
+    text-align: center;
+  }
+  .header-label {
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #7eb8ff;
+  }
+  .header-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 4px;
+    letter-spacing: 3px;
+  }
+  .header-sub {
+    font-size: 11px;
+    color: #8ab4e8;
+    margin-top: 4px;
+    letter-spacing: 2px;
+  }
+  .body-content {
+    padding: 18px 28px;
+  }
+  .copy-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .copy-card {
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    padding: 16px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border-left: 3px solid #4a90d9;
+  }
+  .copy-num {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #4a90d9;
+    min-width: 50px;
+    padding-top: 2px;
+    letter-spacing: 1px;
+  }
+  .copy-text {
+    flex: 1;
+  }
+  .copy-main {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: #f0f0f0;
+    letter-spacing: 1px;
+  }
+  .copy-main .em { color: #7eb8ff; }
+  .copy-target {
+    font-size: 10px;
+    color: #777;
+    letter-spacing: 2px;
+  }
+  .copy-target span {
+    background: #222;
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-right: 5px;
+  }
+  .ai-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #1a3a6a, #4a90d9);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 4px 14px;
+    margin-right: 8px;
+  }
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: #141414;
+    border-top: 1px solid #2a2a2a;
+    padding: 16px 30px;
+    text-align: center;
+  }
+  .bottom-bar p {
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 2px;
+    line-height: 1.7;
+  }
+  .bottom-bar strong { color: #7eb8ff; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="header-label"><span class="ai-badge">AI AUTO-GENERATED</span>CATCHCOPY</p>
+    <p class="header-title">AI自動生成キャッチコピー実例</p>
+    <p class="header-sub">同一商品から複数パターンを瞬時に生成</p>
+  </div>
+  <div class="body-content">
+    <div class="copy-grid">
+      <div class="copy-card">
+        <p class="copy-num">COPY 01</p>
+        <div class="copy-text">
+          <p class="copy-main"><span class="em">3,000粒</span>のクリスタルが輝く、<br>宝石のようなスパークリングワイン。</p>
+          <p class="copy-target"><span>訴求軸：見た目</span><span>ターゲット：ギフト層</span></p>
+        </div>
+      </div>
+      <div class="copy-card">
+        <p class="copy-num">COPY 02</p>
+        <div class="copy-text">
+          <p class="copy-main">開けた瞬間、<span class="em">歓声が上がる</span>。<br>テーブルの主役は、このボトル。</p>
+          <p class="copy-target"><span>訴求軸：体験</span><span>ターゲット：パーティー層</span></p>
+        </div>
+      </div>
+      <div class="copy-card">
+        <p class="copy-num">COPY 03</p>
+        <div class="copy-text">
+          <p class="copy-main">「<span class="em">センスいいね</span>」が止まらない。<br>贈る人の格を上げる、至高の一本。</p>
+          <p class="copy-target"><span>訴求軸：評価</span><span>ターゲット：ビジネスギフト</span></p>
+        </div>
+      </div>
+      <div class="copy-card">
+        <p class="copy-num">COPY 04</p>
+        <div class="copy-text">
+          <p class="copy-main">イタリア最高格付<span class="em">DOCG</span>認定。<br>見た目だけじゃない、味わいも本格派。</p>
+          <p class="copy-target"><span>訴求軸：品質</span><span>ターゲット：ワイン通</span></p>
+        </div>
+      </div>
+      <div class="copy-card">
+        <p class="copy-num">COPY 05</p>
+        <div class="copy-text">
+          <p class="copy-main">飲み終わっても<span class="em">捨てられない</span>。<br>インテリアになる、美しすぎるボトル。</p>
+          <p class="copy-target"><span>訴求軸：付加価値</span><span>ターゲット：自分用</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <p><strong>商品情報を入力するだけ</strong>で、ターゲット別キャッチコピーを<strong>自動生成</strong></p>
+  </div>
+</body>
+</html>

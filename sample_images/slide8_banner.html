@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 700px; height: 700px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .header {
+    background: linear-gradient(135deg, #1a3a6a, #1a2744);
+    padding: 16px 0;
+    text-align: center;
+  }
+  .header-label {
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #7eb8ff;
+  }
+  .header-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 4px;
+    letter-spacing: 3px;
+  }
+  .ai-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #1a3a6a, #4a90d9);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 4px 14px;
+    margin-right: 8px;
+  }
+  .body-content {
+    padding: 20px 24px;
+  }
+  .banner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .banner-card {
+    border: 1px solid #2a2a2a;
+    overflow: hidden;
+    position: relative;
+  }
+  .banner-inner {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    position: relative;
+    overflow: hidden;
+  }
+  .banner-inner.dark {
+    background: linear-gradient(135deg, #1a1a1a, #2a2017);
+  }
+  .banner-inner.gold {
+    background: linear-gradient(135deg, #2a2017, #1a1508);
+    border: 1px solid rgba(201,168,76,0.3);
+  }
+  .banner-inner.white {
+    background: linear-gradient(135deg, #f5f0e8, #ede5d5);
+    color: #1a1a1a;
+  }
+  .banner-inner.elegant {
+    background: linear-gradient(135deg, #0d0d1a, #1a1a2e);
+  }
+  .banner-img {
+    width: 70px;
+    height: 90px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-right: 12px;
+    filter: drop-shadow(0 3px 8px rgba(0,0,0,0.3));
+  }
+  .banner-text {
+    flex: 1;
+  }
+  .banner-catch {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  .banner-catch .em-gold { color: #E8D48B; }
+  .banner-catch .em-blue { color: #7eb8ff; }
+  .banner-catch .em-red { color: #e87878; }
+  .banner-catch .em-dark { color: #8B6914; }
+  .banner-sub {
+    font-size: 10px;
+    color: #999;
+    letter-spacing: 1px;
+  }
+  .white .banner-sub { color: #888; }
+  .banner-label {
+    background: #141414;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner-type {
+    font-size: 9px;
+    color: #666;
+    letter-spacing: 2px;
+  }
+  .banner-size {
+    font-size: 9px;
+    color: #4a90d9;
+    letter-spacing: 1px;
+  }
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: #141414;
+    border-top: 1px solid #2a2a2a;
+    padding: 16px 30px;
+    text-align: center;
+  }
+  .bottom-bar p {
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 2px;
+    line-height: 1.7;
+  }
+  .bottom-bar strong { color: #7eb8ff; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="header-label"><span class="ai-badge">AI AUTO-GENERATED</span>BANNER GALLERY</p>
+    <p class="header-title">AI自動生成バナー実例集</p>
+  </div>
+  <div class="body-content">
+    <div class="banner-grid">
+
+      <div class="banner-card">
+        <div class="banner-inner dark">
+          <img class="banner-img" src="https://tshop.r10s.jp/taka-sake/cabinet/wine2/01556973/wine02/imgrc0139069202.jpg" alt="">
+          <div class="banner-text">
+            <p class="banner-catch"><span class="em-gold">3,000粒</span>の輝き。<br>宝石をまとった<br>スパークリング。</p>
+            <p class="banner-sub">BOTTEGA STARDUST</p>
+          </div>
+        </div>
+        <div class="banner-label">
+          <span class="banner-type">PATTERN A ダーク</span>
+          <span class="banner-size">700 x 700</span>
+        </div>
+      </div>
+
+      <div class="banner-card">
+        <div class="banner-inner white">
+          <img class="banner-img" src="https://tshop.r10s.jp/taka-sake/cabinet/wine2/01556973/wine02/imgrc0139069202.jpg" alt="">
+          <div class="banner-text">
+            <p class="banner-catch" style="color:#1a1a1a;">開けた瞬間、<br><span class="em-dark">歓声が上がる</span>。<br>至高の贈り物。</p>
+            <p class="banner-sub">BOTTEGA STARDUST</p>
+          </div>
+        </div>
+        <div class="banner-label">
+          <span class="banner-type">PATTERN B ライト</span>
+          <span class="banner-size">700 x 700</span>
+        </div>
+      </div>
+
+      <div class="banner-card">
+        <div class="banner-inner gold">
+          <img class="banner-img" src="https://tshop.r10s.jp/taka-sake/cabinet/wine2/01556973/wine02/imgrc0139068920.jpg" alt="">
+          <div class="banner-text">
+            <p class="banner-catch">ロゼの優美さと<br><span class="em-gold">クリスタル</span>の輝きが<br>融合した至高の一本。</p>
+            <p class="banner-sub">STARDUST ROSÉ</p>
+          </div>
+        </div>
+        <div class="banner-label">
+          <span class="banner-type">PATTERN C ゴールド</span>
+          <span class="banner-size">700 x 700</span>
+        </div>
+      </div>
+
+      <div class="banner-card">
+        <div class="banner-inner elegant">
+          <img class="banner-img" src="https://tshop.r10s.jp/taka-sake/cabinet/wine2/01556973/wine02/imgrc0139121464.jpg" alt="">
+          <div class="banner-text">
+            <p class="banner-catch">漆黒に宿る<br><span class="em-blue">3,000の星</span>。<br>特別な夜を彩る。</p>
+            <p class="banner-sub">STARDUST BLACK</p>
+          </div>
+        </div>
+        <div class="banner-label">
+          <span class="banner-type">PATTERN D エレガント</span>
+          <span class="banner-size">700 x 700</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <p><strong>商品画像＋商品情報</strong>を入力 → <strong>複数デザインパターン</strong>を自動生成</p>
+  </div>
+</body>
+</html>

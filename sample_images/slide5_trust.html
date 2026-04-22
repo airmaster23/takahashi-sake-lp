@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 700px; height: 700px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #FAFAF7;
+    color: #1a1a1a;
+    overflow: hidden;
+    position: relative;
+  }
+  .header {
+    background: #8B6914;
+    padding: 18px 0;
+    text-align: center;
+  }
+  .header-label {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #fff;
+  }
+  .header-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 4px;
+    letter-spacing: 3px;
+  }
+  .body-content {
+    padding: 25px 35px;
+  }
+  .rating-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background: #fff;
+    border: 2px solid #C9A84C;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .rating-num {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #C9A84C;
+    line-height: 1;
+  }
+  .rating-detail { text-align: left; }
+  .stars { color: #C9A84C; font-size: 22px; letter-spacing: 3px; }
+  .rating-text { font-size: 13px; color: #666; margin-top: 4px; letter-spacing: 1px; }
+  .review-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .review-card {
+    background: #fff;
+    border: 1px solid #e8e5dc;
+    padding: 16px 20px;
+    position: relative;
+  }
+  .review-stars {
+    color: #C9A84C;
+    font-size: 14px;
+    margin-bottom: 6px;
+    letter-spacing: 2px;
+  }
+  .review-text {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.7;
+  }
+  .review-author {
+    font-size: 11px;
+    color: #999;
+    margin-top: 6px;
+    letter-spacing: 1px;
+  }
+  .bottom-bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: #1a1a1a;
+    padding: 20px 30px;
+    text-align: center;
+  }
+  .bottom-bar p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  .bottom-bar .gold { color: #E8D48B; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="header-label">TRUST & REVIEWS</p>
+    <p class="header-title">お客様の声と実績</p>
+  </div>
+  <div class="body-content">
+    <div class="rating-section">
+      <div class="rating-num">4.63</div>
+      <div class="rating-detail">
+        <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="rating-text">楽天レビュー平均（本商品）</p>
+      </div>
+    </div>
+    <div class="review-grid">
+      <div class="review-card">
+        <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="review-text">友人の誕生日にプレゼントしました。ボトルの美しさに「こんなの初めて見た！」と大感動。中身も美味しくて大満足です。</p>
+        <p class="review-author">30代女性 ギフト購入</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="review-text">パーティーで使いましたが、テーブルに出した瞬間に歓声が上がりました。写真映えも最高で、皆SNSにアップしていました。</p>
+        <p class="review-author">40代男性 パーティー用</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="review-text">梱包が非常に丁寧で安心しました。正規品なので品質も間違いなし。飲んだ後もインテリアとして飾っています。</p>
+        <p class="review-author">20代女性 自分用購入</p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <p>選ばれ続けて<span class="gold">レビュー高評価</span>の実力。</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 700px; height: 700px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .header {
+    background: #C9A84C;
+    padding: 18px 0;
+    text-align: center;
+  }
+  .header-label {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #1a1a1a;
+  }
+  .header-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 4px;
+    letter-spacing: 3px;
+  }
+  .body-content {
+    padding: 35px 45px;
+  }
+  .compare-title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    color: #E8D48B;
+  }
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  .compare-table th {
+    background: #2a2a2a;
+    padding: 14px 10px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #C9A84C;
+  }
+  .compare-table th.highlight {
+    background: #3a2a10;
+    color: #E8D48B;
+  }
+  .compare-table td {
+    padding: 14px 10px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  .compare-table td.highlight {
+    color: #fff;
+    font-weight: 700;
+    background: rgba(201,168,76,0.05);
+  }
+  .check { color: #C9A84C; font-size: 18px; }
+  .cross { color: #666; font-size: 18px; }
+  .bottom-catch {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    background: linear-gradient(transparent, rgba(10,10,10,0.9));
+  }
+  .bottom-catch p {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  .bottom-catch .gold { color: #E8D48B; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="header-label">ADVANTAGE</p>
+    <p class="header-title">他にはない強み</p>
+  </div>
+  <div class="body-content">
+    <p class="compare-title">一般的なスパークリングとの比較</p>
+    <table class="compare-table">
+      <tr>
+        <th style="width:35%"></th>
+        <th class="highlight" style="width:35%">BOTTEGA<br>STARDUST</th>
+        <th style="width:30%">一般的な<br>スパークリング</th>
+      </tr>
+      <tr>
+        <td>クリスタル装飾</td>
+        <td class="highlight"><span class="check">&#10004;</span> 約3,000粒</td>
+        <td><span class="cross">&#10008;</span></td>
+      </tr>
+      <tr>
+        <td>DOCG格付</td>
+        <td class="highlight"><span class="check">&#10004;</span> 最高格付</td>
+        <td><span class="cross">&#10008;</span> なし</td>
+      </tr>
+      <tr>
+        <td>ギフト映え</td>
+        <td class="highlight"><span class="check">&#10004;</span> 圧倒的</td>
+        <td>普通</td>
+      </tr>
+      <tr>
+        <td>SNS映え</td>
+        <td class="highlight"><span class="check">&#10004;</span> 写真映え抜群</td>
+        <td>普通</td>
+      </tr>
+      <tr>
+        <td>話題性</td>
+        <td class="highlight"><span class="check">&#10004;</span> 必ず話題に</td>
+        <td>普通</td>
+      </tr>
+    </table>
+  </div>
+  <div class="bottom-catch">
+    <p>贈った瞬間、<span class="gold">「すごい！」</span>が生まれる。</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 700px; height: 700px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .bg {
+    position: absolute; top:0; left:0; right:0; bottom:0;
+    background:
+      radial-gradient(ellipse 500px 400px at 50% 45%, rgba(201,168,76,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .content {
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+  }
+  .top-label {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #C9A84C;
+    margin-bottom: 25px;
+  }
+  .main-catch {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+  .main-catch .gold { color: #E8D48B; }
+  .price-box {
+    border: 2px solid #C9A84C;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+    background: rgba(201,168,76,0.05);
+  }
+  .price-from {
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+  .price-main {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #E8D48B;
+    letter-spacing: 2px;
+  }
+  .price-main small {
+    font-size: 16px;
+    color: #999;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+  }
+  .price-note {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+    letter-spacing: 1px;
+  }
+  .benefits-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .benefit-tag {
+    border: 1px solid #555;
+    padding: 8px 18px;
+    font-size: 12px;
+    color: #ccc;
+    letter-spacing: 2px;
+  }
+  .benefit-tag .icon { color: #C9A84C; margin-right: 5px; }
+  .cta-button {
+    background: linear-gradient(135deg, #8B6914, #C9A84C, #E8D48B);
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    padding: 20px 70px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  .cta-sub {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 2px;
+  }
+  .bottom-line {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #C9A84C, transparent);
+  }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="content">
+    <p class="top-label">BOTTEGA STARDUST</p>
+    <p class="main-catch">
+      大切な人に、<span class="gold">最高の驚き</span>を。<br>
+      <span class="gold">忘れられない一本</span>をお届けします。
+    </p>
+    <div class="price-box">
+      <p class="price-from">税込価格</p>
+      <p class="price-main">&yen;12,210〜 <small>（税込・送料別）</small></p>
+      <p class="price-note">プロセッコ / ロゼ / ブラック 3色展開</p>
+    </div>
+    <div class="benefits-row">
+      <div class="benefit-tag"><span class="icon">&#10004;</span>正規品</div>
+      <div class="benefit-tag"><span class="icon">&#10004;</span>翌日配送</div>
+      <div class="benefit-tag"><span class="icon">&#10004;</span>ギフト対応</div>
+    </div>
+    <div class="cta-button">カートに入れる</div>
+    <p class="cta-sub">14時までのご注文で最短翌日お届け</p>
+  </div>
+  <div class="bottom-line"></div>
+</body>
+</html>

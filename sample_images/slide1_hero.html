@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&display=swap');
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    width: 700px; height: 700px;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .bg-gradient {
+    position: absolute; top:0; left:0; right:0; bottom:0;
+    background: radial-gradient(ellipse at 50% 60%, rgba(201,168,76,0.12) 0%, transparent 70%);
+  }
+  .content {
+    position: relative; z-index:2;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+  }
+  .badge {
+    border: 1px solid #C9A84C;
+    color: #C9A84C;
+    font-size: 11px;
+    letter-spacing: 4px;
+    padding: 6px 24px;
+    margin-bottom: 20px;
+  }
+  .product-image {
+    width: 280px;
+    height: 320px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 10px 30px rgba(201,168,76,0.2));
+  }
+  .brand {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #C9A84C;
+    margin-bottom: 8px;
+  }
+  .catch {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+  }
+  .catch .gold { color: #E8D48B; }
+  .sub {
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 2px;
+    line-height: 1.8;
+  }
+  .bottom-line {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #C9A84C, transparent);
+  }
+</style>
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="content">
+    <div class="badge">AUTHORIZED DEALER</div>
+    <img class="product-image" src="https://tshop.r10s.jp/taka-sake/cabinet/wine2/01556973/wine02/imgrc0139069202.jpg" alt="">
+    <p class="brand">BOTTEGA STARDUST</p>
+    <p class="catch"><span class="gold">3,000粒</span>のクリスタルが<br>輝く、宝石のスパークリング</p>
+    <p class="sub">イタリア・ヴェネト州産 プロセッコDOCG｜750ml</p>
+  </div>
+  <div class="bottom-line"></div>
+</body>
+</html>
